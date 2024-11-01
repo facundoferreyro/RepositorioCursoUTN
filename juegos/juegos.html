@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion Juegos</title>
+    <link rel="stylesheet" href="juegos.css">
+    <link rel="icon" href="/assets/imagenes/logo.png" type="image/jpg">
+</head>
+<body>
+    <nav class="nav_bar">
+        <a href="/index.html"><img src="/assets/imagenes/ComputerLogo.png" alt="" class="pc_logo"></a>
+        <ul class="ul_container">
+            <li class="ul_item"><a href="/historia/historia.html" class="nav_bar_a">HISTORIA</a></li>
+            <li class="ul_item"><a href="/juegos/juegos.html" class="nav_bar_a">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header_div">
+            <h1>JUGUEMOS UN POCO</h1>
+        </div>
+    </header>
+    <main>
+        <h2 class="h2_class">Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="juego">
+            <div class="cajas_placeholder">
+                <div class="caja" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"><p class="p_absolute">Arrastre y suelte la imagen aquí</p></div>
+                <div class="caja" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"><p class="p_absolute">Arrastre y suelte la imagen aquí</p></div>
+                <div class="caja" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"><p class="p_absolute">Arrastre y suelte la imagen aquí</p></div>
+            </div>
+            <div class="imagenes">
+                <img src="/assets/imagenes/Rompe2.png" alt="imagen_en_rompecabezas" id="imagen1" draggable="true" ondragstart="drag(event)">
+                <img src="/assets/imagenes/rompe1.png" alt="imagen_en_rompecabezas" id="imagen2" draggable="true" ondragstart="drag(event)">
+                <img src="/assets/imagenes/Rompe3.png" alt="imagen_en_rompecabezas" id="imagen3" draggable="true" ondragstart="drag(event)">
+            </div>
+        </section>
+        <button onclick="reinicio()" class="boton_ruta reinicio"><a href="/juegos/juegos.html" class="a_reinicio">REINICIAR</a></button>
+        <script src="juegos.js"></script>
+    </main>
+</body>
+</html>
